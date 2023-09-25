@@ -1,0 +1,77 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh ;
+    background-color: var(--background);
+}
+
+.plans{
+    background: var(--text-secondary);
+    box-shadow:1px 1px 20px rgba(0, 0, 0, 0.5) ;
+    text-align: center;
+    transition: 0.5s;
+    padding: 2% ;
+    width: 15%;
+}
+
+.plans > h1{
+    font-weight: bold;
+    font-size: 1.25rem;
+    color: var(--text-primary);
+}
+
+
+.price{
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+    border: 2px solid var(--text-primary);
+    margin: 5% auto 0 auto; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.access{
+    margin: 3%;
+}
+.price h2{
+    font-size: 1rem;
+    color: var(--text-primary);
+}
+.access h4{
+    text-align: center;
+    color: var(--text-primary);
+    font-size: 1.10rem;
+}
+.plans:hover{
+    background: var(--text-primary);
+    color: var(--text-secondary);
+    box-shadow: 0 0 15px rgba(0,0,0,1);
+    transform: scale(1.1);
+    z-index: 1;
+    border-radius: 25px;
+}
+
+.plans:hover > .access h4 , .plans:hover > h1, .plans:hover > .price h2{
+    color: var(--text-secondary);
+}
+
+
+.plans:hover .price{
+    border-color: var(--text-secondary);
+}
+.b > button{
+    background: var(--text-primary);
+    color: var(--text-secondary);
+    padding: 10px 60px;
+    display: inline-block;
+    text-transform: uppercase;
+    font-weight: bold;
+    outline: none;
+    border:  2px solid var(--text-secondary);
+}
+.plans:hover .b>button{
+    background: var(--text-secondary);
+    color: var(--text-primary);
+}

@@ -1,0 +1,146 @@
+/* instagram.css */
+
+.multimediacontainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    justify-content: center;
+    padding: 5%;
+    background-color: var(--background);
+  }
+  
+  .photocontainer,
+  .videocontainer {
+    align-items: center;
+    position: relative;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap; 
+  }
+  
+  .container {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  }
+  
+  .vcontainer {
+    position: relative;
+    width: 300px;
+    height: 500px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  }
+  
+  .multimediaitem {
+    position: absolute;
+    inset: 0;
+    border-radius: 12px;
+    border: 2px solid var(--text-primary); 
+  }
+  
+  .container:hover .multimediaitem img {
+    opacity: 0.5;
+  }
+  
+  .vcontainer:hover .multimediaitem img {
+    opacity: 0.5;
+  }
+  
+  .glass {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(#fff2, transparent);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 25px 25px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    scale: 0;
+    opacity: 0.1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transition: 0.5s;
+  }
+  
+  .container:hover {
+    transform: rotate(-15deg);
+  }
+  
+  .vcontainer:hover {
+    transform: rotate(-15deg);
+  }
+  
+  .container:hover .glass {
+    opacity: 1;
+    scale: 1;
+    transform: rotate(20deg);
+  }
+  
+  .vcontainer:hover .glass {
+    opacity: 1;
+    scale: 1;
+    transform: rotate(20deg);
+  }
+  
+  /* Style for images */
+  .hoverimg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: block;
+    transition: 0.5s;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+  
+  /* Style for videos */
+  .hovervideo {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: block;
+    transition: 0.5s;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+  
+  .glass h3 {
+    font-size: 1.5rem;
+   text-align: center;
+    color: var(--text-primary);
+  }
+  
+  .glass ul {
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+  }
+  
+  .glass ul li {
+    padding: 4% 4%;
+    color: var(--text-primary);
+  }
+  
+  .glass button {
+    padding: 2% 6%;
+    font-size: 1rem;
+    background-color: var(--background);
+    border: 1px solid var(--text-primary);
+    cursor: pointer;
+    width: 40%;
+    border-radius: 10px;
+    color: var(--text-primary);
+  }

@@ -1,0 +1,205 @@
+/* Chat.module.css */
+.app {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid var(--text-primary);
+    height: 100vh;
+    background-color: var(--background);
+  }
+  
+  .conversation {
+    padding: 20px;
+    border-right: 1px solid var(--text-primary);
+    min-width: 250px;
+    color: var(--text-primary);
+  }
+  
+  .friendlist {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .paraa {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    transition: 0.5s ease-in;
+  }
+  
+  .paraa:hover {
+    background-color: var(--text-primary);
+    color: var(--text-secondary);
+    border-radius: 10px;
+    transition: 0.5s ease-out;
+  }
+  
+  .profile {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+
+  /* Styles for sender messages */
+.messages.user {
+    background-color: var(--text-secondary);
+    color: var(--text-primary);
+    margin: 5px 0;
+    padding: 8px;
+    border-radius: 10px;
+    max-width: 80%;
+    align-self: flex-end;
+  }
+  
+  /* Styles for other messages */
+  .messages.friend {
+    background-color: var(--text-primary);
+    color: var(--text-secondary);
+    margin: 5px 0;
+    padding: 8px;
+    border-radius: 10px;
+    max-width: 80%;
+    align-self: flex-start;
+    border: 2px solid var(--text-primary);
+  }
+  
+  
+  .messages {
+    flex: 3;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .msgheader {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: var(--text-primary);
+    border-radius: 10px;
+  }
+  
+  .msgheaderimg {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .msgheaderuser {
+    font-weight: bold;
+    color: var(--text-secondary);
+  }
+  
+  .msgmaincontainer {
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    padding: 10px;
+  }
+  
+  .msgcontainer {
+    margin-bottom: 120px;
+    padding: 10px;
+    border-radius: 5px;
+    max-width: 70%;
+  }
+  
+  /* Styles for sender messages */
+.messages.user {
+  background-color: var(--text-secondary);
+  color: var(--text-primary);
+  margin: 5px 0;
+  padding: 8px;
+  border-radius: 10px;
+  max-width: 80%;
+  align-self: flex-end; /* Sent messages align to the right */
+  border: 2px solid var(--text-primary);
+}
+
+/* Styles for other messages */
+.messages.friend {
+  background-color: var(--text-primary);
+  color: var(--text-secondary);
+  margin: 5px 0;
+  padding: 8px;
+  border-radius: 10px;
+  max-width: 80%;
+  align-self: flex-start; /* Received messages align to the left */
+}
+
+  .chat {
+    margin: 0;
+  }
+  
+  .msginput {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: var(--text-secondary);
+    border-radius: 10px;
+    position: fixed;
+    bottom: 20px;
+    width: 70%;
+    border: 2px solid var(--text-primary);
+  }
+  
+  .inputfield {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid var(--text-primary);
+    border-radius: 5px;
+    margin-right: 10px;   
+  }
+  
+  .send {
+    padding: 10px 20px;
+    background-color: var(--text-primary);
+    color: var(--text-secondary);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.5s ease-in;
+    border: 2px solid var(--text-primary);
+  }
+  
+  .send:hover {
+    background-color: var(--text-secondary);
+    color: var(--text-primary);
+    transition: 0.5s ease-out;
+
+  }
+  
+  .inputContainer {
+    display: flex; 
+     width: 100%;
+  }
+
+  .gifWrapper {
+    position: absolute; /* Position the GIF absolutely within the inputWrapper */
+    left: 10px;
+    transform: translateY(-50%);
+    z-index: -1;
+  }
+  
+  .gifImage {
+    width: 50px; /* Set the width of the GIF as desired */
+    height:50px;
+    margin-bottom: 70px;
+    mix-blend-mode: color-burn;
+  }
+
+  .coverimg{
+    width: 40%;
+    height: 50%;
+    padding: 5% 30%;
+  }
+  .caption{
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: bold;
+    color: var(--text-primary);
+  }
+  
