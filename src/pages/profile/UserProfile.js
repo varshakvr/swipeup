@@ -30,7 +30,7 @@ function UserProfile() {
                                 <div className={Styles.profile_image} style={{backgroundImage:`url(${user.profilepic})`}}></div>
                                 <div className={Styles.profile_names}>
                                     <h1 className={Styles.username}>{user.username}</h1>
-                                    <div className={Styles.buttons}>
+                                    <div className={Styles.profile_buttons}>
                                         <Link to="/editprofile" className={Styles.link}>Edit Profile</Link>
                                         <div className={Styles.social_media}>
                                             <span>Follow me in:</span>

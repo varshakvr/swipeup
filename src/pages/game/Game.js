@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
-import varsha from "../../assests/images/varsha.jpeg";
-import vinu from "../../assests/images/vinishiya.jpeg";
-import kokila from "../../assests/images/kokila.jpg";
-import sai from "../../assests/images/sai.jpeg";
-import hemanth from "../../assests/images/hemanth.jpg";
-import kishore from "../../assests/images/kishore.jpeg";
+import varsha from "../../assests/images/img1.jpeg";
+import vinu from "../../assests/images/img2.jpeg";
+import kokila from "../../assests/images/img3.jpeg";
+import sai from "../../assests/images/img4.jpeg";
+import hemanth from "../../assests/images/img5.jpeg";
+import kishore from "../../assests/images/img6.jpeg";
 import background from "../../assests/images/cardbg.jpeg";
 import Styles from './Game.module.css';
 import Confetti from 'react-confetti';

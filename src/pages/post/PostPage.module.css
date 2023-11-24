@@ -25,14 +25,14 @@
 .dummy{
     display: flex;
     justify-content: center;
+
 }
 
 .PostShare > img{
     border-radius: 50%;
     width: 4rem;
-    height: 4rem;
+    height: 3.5rem;
     object-fit: cover;
-
 }
 
 .controls{
@@ -132,7 +132,7 @@
     border: 2px solid var(--text-primary);
     border-radius: 10px;
     width: 160px;
-    height: 220px;
+    height: 30vh;
 }
 
 .storycard:first-child:hover{
@@ -162,7 +162,7 @@
 
 .storybackground{
     width: 100%;
-    height: 220px;
+    height: 30vh;
     border-radius: 10px;
     object-fit: cover;
     cursor: pointer;
@@ -257,25 +257,17 @@
     cursor: pointer;
 }
 
-  /* Responsive styles for screens smaller than 768px (e.g., mobile devices) */
-@media (max-width: 768px) {
-    .instagramfeed {
-        padding: 0.5rem;
-    }
   
-    .instagramfeed > img {
-       border-radius: 0.25rem;
-    }
-  }
-  
-  /* Responsive styles for screens between 769px and 1024px (e.g., tablets) */
   @media (min-width: 769px) and (max-width: 1024px) {
     .instagramfeed {
       padding: 1rem;
     }
+
+.product_details .container{
+    width: 50%;
+}
   }
-  
-  /* Responsive styles for screens larger than 1024px (e.g., desktops) */
+
   @media (min-width: 1025px) {
     .instagramfeed {
       padding: 1.5rem;
@@ -284,4 +276,60 @@
     .instagramfeed > img {
       border-radius: 0.75rem;
     }
+}
+
+@media (max-width: 768px) {
+    .instagramfeed {
+        padding: 0.5rem;
+    }
+  
+    .instagramfeed > img {
+       border-radius: 0.25rem;
+    }
+
+    .controls > div > span{
+        font-size: 0.75rem;
+    }
+    .PostShare > img{
+        height: 3rem;
+    }
+    .product_details .container{
+        width: 60%;
+    }
   }
+
+@media screen and (max-width: 576px) {
+    .product_details .container{
+        width: 70%;
+    }
+    .storybackground{
+        height: 23vh;
+    }
+    .storycard:first-child{
+        height: 23vh;
+    }
+    .stories{
+        min-height: 25vh;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .dummy {
+        width: 100%;
+    }
+    .PostShare{
+        width: 90%;
+    }
+    .product_details .container{
+        width: 80%;
+    }
+    .stories{
+        min-height: 25vh;
+    }
+    .storybackground{
+        height: 23vh;
+    }
+.storycard:first-child{
+    height: 23vh;
+}
+}

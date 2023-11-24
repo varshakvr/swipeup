@@ -6,15 +6,15 @@ import sai from "../../assests/images/sai.jpeg";
 import varsha from "../../assests/images/varsha.jpeg";
 import hello from '../../assests/images/hello.gif';
 import chat from '../../assests/images/chat.gif';
-
+import PeopleOutlineIcon from '@mui/icons-material/PeopleOutline';
 function Chat(){
   const initialConversations = [
     {
       id: 0,
-      title: 'Vinishiya',
+      title: 'Sophia',
       img: vinu,
       messages: [
-        { text: 'Hi Vinu, how are you?', sender: 'user' },
+        { text: 'Hi Sophia, how are you?', sender: 'user' },
         { text: 'I am doing well, thanks!', sender: 'other' },
         { text: 'What have you been up to?', sender: 'user' },
         { text: 'Just working on some projects.', sender: 'other' },
@@ -22,10 +22,10 @@ function Chat(){
     },
     {
       id: 1,
-      title: 'Kokila',
+      title: 'Emily',
       img: koki,
       messages: [
-        { text: "Hey Koki, how's it going?", sender: 'user' },
+        { text: "Hey Emily, how's it going?", sender: 'user' },
         { text: "Hello! I'm good, thanks for asking.", sender: 'other' },
         { text: 'Any plans for the weekend?', sender: 'user' },
         { text: 'Not sure yet, maybe just relax.', sender: 'other' },
@@ -33,10 +33,10 @@ function Chat(){
     },
     {
       id: 2,
-      title: 'Varsha',
+      title: 'Lily',
       img: varsha,
       messages: [
-        { text: "Hi Varsha, how's your day been?", sender: 'user' },
+        { text: "Hi Lily, how's your day been?", sender: 'user' },
         { text: "Hi! It's been a busy day.", sender: 'other' },
         { text: 'Anything interesting happening?', sender: 'user' },
         { text: 'Not much, just the usual.', sender: 'other' },
@@ -44,10 +44,10 @@ function Chat(){
     },
     {
       id: 3,
-      title: 'Sai',
+      title: 'Benjamin',
       img: sai,
       messages: [
-        { text: "Hello Sai, what's new?", sender: 'user' },
+        { text: "Hello Benjamin, what's new?", sender: 'user' },
         { text: 'Not much, just work and more work.', sender: 'other' },
         { text: 'Need a break?', sender: 'user' },
         { text: 'Definitely! Vacation time soon!', sender: 'other' },
@@ -114,7 +114,7 @@ function Chat(){
       }, 1000);
     }
   };
-
+  const[floating,setFloating]=useState(false);
   return (
     <div className={Styles.app}>
       <div className={Styles.conversation}>
@@ -132,8 +132,25 @@ function Chat(){
           ))}
         </ul>
       </div>
+      {
+        floating && 
+      <div className={Styles.hiddenconversation}>
+        <h2>Conversations</h2>
+        <ul className={Styles.friendlist}>
+          {conversations.map((conversation) => (
+            <p
+              key={conversation.id}
+              onClick={() => {handleConversationClick(conversation.id);setFloating(!floating)}}
+              className={Styles.paraa}
+            >
+              <img className={Styles.profile} src={conversation.img} alt={conversation.title} />
+              <p>{conversation.title}</p>
+            </p>
+          ))}
+        </ul>
+      </div>}
       <div className={Styles.messages}>
-        
+        <PeopleOutlineIcon className={Styles.gang} onClick={()=>setFloating(!floating)}/>
         {selectedConversation !== null ? (
           <>
             <div className={Styles.msgheader}>

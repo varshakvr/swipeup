@@ -6,12 +6,11 @@
     box-sizing: border-box;
     position: relative;
     overflow: hidden;
-    overflow-y: scroll;
 }
 
 .background{
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     object-fit: cover;
 }
 
@@ -127,4 +126,10 @@ transition: 0.5s ease-in;
 
 .radio_buttons > label{
      color: white;
+}
+
+@media screen and (max-width: 450px) {
+    .musicdiv{
+        width: 100%;
+    }
 }

@@ -61,17 +61,57 @@
 .plans:hover .price{
     border-color: var(--text-secondary);
 }
+
+.b{
+    width: 100%;
+}
+
 .b > button{
     background: var(--text-primary);
     color: var(--text-secondary);
-    padding: 10px 60px;
-    display: inline-block;
+    padding: 4%;
     text-transform: uppercase;
     font-weight: bold;
     outline: none;
     border:  2px solid var(--text-secondary);
+    width: 100%;
 }
 .plans:hover .b>button{
     background: var(--text-secondary);
     color: var(--text-primary);
+}
+
+@media screen and (max-width: 992px){
+    .plans{
+        width: 20%;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .container{
+        flex-direction: column;
+        padding: 3% 0%;
+    }
+
+    .plans{
+        width: 30%;
+        margin: 3%;
+    }
+    .plans:hover{
+        transform: scale(1);
+        border-radius: 0px;
+    }
+}
+
+@media screen and (max-width: 576px){
+    .plans{
+        width: 40%;
+        
+    }
+}
+@media screen and (max-width: 450px){
+    .plans{
+        width: 60%;
+        
+    }
 }

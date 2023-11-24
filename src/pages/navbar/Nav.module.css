@@ -33,7 +33,8 @@
     width: 7%;
     height: 7%;
     position: absolute;
-    right: 10%;top: 10%;
+    top: 25px;
+    right: 20px;
     cursor: pointer;
 }
 
@@ -50,6 +51,14 @@
     background-color: var(--background);
     color: var(--text-primary);
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.hiddensidebar{
+    display: none;
+    position: fixed;
+    background-color: var(--text-secondary);
+    height: 100vh;
+    z-index: 999;
 }
 
 ::-webkit-scrollbar {
@@ -126,9 +135,17 @@
 }
 
 /*Nav Top*/
+.menudiv{
+    padding: 0% 2%;
+}
+.menuIcon{
+    color: var(--text-primary);
+}
+
 .topnav{
     background-color: var(--background);
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    width: 100%;
 }
 .topbarContainer {
     height: 50px;
@@ -160,7 +177,7 @@
 }
 
 .searchbar {
-    width: 70%;
+    width: 300px;
     height: 30px;
     background-color: var(--text-primary);
     border-radius: 30px;
@@ -176,7 +193,7 @@
 
 .searchInput {
     border: none;
-    width: 90%;
+    width: 50%;
     background-color: transparent;
     color: var(--background);
 }
@@ -280,6 +297,8 @@
     font-family: Arial, Helvetica, sans-serif;
     color: var(--text-primary);
 }
+
+
 .trend{
     display: flex;
     flex-direction: column;
@@ -348,6 +367,75 @@ a{
 .friendlist{
     margin:0;
     padding: 1rem;
+}
+
+@media screen and (max-width: 992px){
+    .RightSide{
+        display: none;
+    }
+    .logout > p{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .sidebar{
+        display: none;
+    }
+    .hiddensidebar{
+        display: block;
+    }
+    .searchbar{
+        width: 170px;
+    }
+    .logo{
+        font-size: larger;
+    }
+    .topbarLeft {
+        flex: none;
+        margin-right: 2%;
+    }
+    .product_details .container .close{
+        top: 15px;
+    }
+}
+
+
+@media screen and (max-width: 576px){
+    .searchbar{
+        width: 100px;
+    }    
+    .picker{
+        width: 90% !important;
+    }
+    .container{
+        width: 75% !important;
+    }
+    .container > div > h3{
+        font-size: medium;
+    }
+}
+
+@media screen and (max-width: 450px){ 
+    .product_details .container{
+        flex-direction: column;
+        height: 70vh;
+    }
+    .topbarLeft{
+        margin-right: 5px;
+    }
+    ::-webkit-scrollbar {
+        display: none;
+    }
+    .logout{
+        margin: 0px 5px;
+    }
+    .logo{
+        margin-left: 0px;
+    }
+    .topbarCenter{
+        display: none;
+    }
 }
 
 /* Toggle Css */

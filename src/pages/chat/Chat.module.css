@@ -147,7 +147,7 @@
   }
   
   .inputfield {
-    flex: 1;
+    width: 100%;
     padding: 10px;
     border: 1px solid var(--text-primary);
     border-radius: 5px;
@@ -174,7 +174,7 @@
   
   .inputContainer {
     display: flex; 
-     width: 100%;
+    width: 100%;
   }
 
   .gifWrapper {
@@ -202,4 +202,57 @@
     font-weight: bold;
     color: var(--text-primary);
   }
+
+  .gang{
+    display: none !important;
+    background-color: var(--text-primary);
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-bottom: 10px;
+    color: var(--text-secondary);
+  }
   
+  .hiddenconversation {
+    padding: 20px;
+    min-width: 250px;
+    color: var(--text-primary);
+    position: fixed;
+    background-color: var(--text-secondary);
+    margin-top: 10vh;
+    height: 90vh;
+    z-index: 5;
+  }
+  
+  @media screen and (max-width:1190px) {
+    .msginput{
+      width: 65%;
+    }
+  }
+
+  @media screen and (max-width:992px) {
+    .msginput{
+      width: 55%;
+    }
+  }
+  @media screen and (max-width:768px) {
+  
+    .conversation{
+      display:none;
+    }
+    .gang{
+      display: block !important;
+    } 
+    .msginput{
+      width: 85%;
+    }
+  }
+  @media screen and (max-width:450px) {
+    .msginput{
+      width: 75%;
+    }
+    .coverimg{
+      width: 60%;
+      padding: 10% 20%;
+    }
+  }

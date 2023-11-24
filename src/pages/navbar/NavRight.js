@@ -34,31 +34,31 @@ function NavRight(){
     const [user,setUser]=useState([
         {
             id: 1,
-            name: 'Vinishiya',
-            username: 'Vinujo',
+            name: 'Sophia',
+            username: 'Sophia Davis',
             img:vinu 
         },
         {
             id: 2,
-            name: 'Kokila',
-            username: 'Kokilavarsha',
+            name: 'Emily',
+            username: 'Emily Thompson',
             img: koki
         },
         {
             id: 3,
-            name: 'Varsha',
-            username: 'Varsha',
+            name: 'Lily',
+            username: 'Lily Johnson',
             img: varsha
         },
         {
             id: 4,
-            name: 'Kishore',
-            username: 'Kishore',
+            name: 'Benjamin',
+            username: 'Benjamin Smith',
             img: kishore
         },{
             id: 5,
-            name: 'Sai Srinivas',
-            username: 'Sai Srinivas',
+            name: 'Oliver',
+            username: 'Oliver Williams',
             img: sai
         },
     ])

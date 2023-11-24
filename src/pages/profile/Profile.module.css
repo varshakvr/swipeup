@@ -98,7 +98,7 @@
     padding: 0px;
 }
 
-.buttons{
+.profile_buttons{
     width: 15rem;
     padding: 2% 0%;
     display: flex;
@@ -353,6 +353,23 @@
     transform: scale(1.25);
 }
 
+@media screen and (max-width: 992px){
+    .editProfile{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .top{
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .bottom{
+        margin: 0px;
+        padding-top: 0px;
+    }
+}
+
 @media screen and (max-width: 768px) {
     .profile_card {
         height: 100%;
@@ -379,8 +396,35 @@
 
     .profile_actions {
         grid-template-columns: repeat(2, 1fr);
-        margin-top: 90px;
+        margin-top: 190px;
     }
+
+    .link{
+        width: 160px;
+    }
+
     .bio {grid-column: 1/3;}
+
+    .editProfile{
+        margin-top: 130px;
+    }
+    
 }
             
+@media screen and (max-width: 450px) {
+    .profile_names{
+        padding: 10px;
+    }
+
+    .link{
+        width: 150px;
+    }
+    .social_media{
+        padding: 5px;
+        gap: 7px;
+    }
+
+    .editProfile{
+        margin-top: 70px;
+    }
+}

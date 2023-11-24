@@ -29,7 +29,7 @@ function Login() {
         setErrorLogin({...errorLogin,email:false,password:true});
       }
     } else {
-      setErrorLogin({ ...errorLogin, email: true, password: false }); 
+      setErrorLogin({ ...errorLogin, email: true, password: true }); 
     }
   };
 
@@ -93,6 +93,7 @@ function Login() {
     <>
       <div className={styles.app}>
       <ParticlesBg/>
+      <h1 className={styles.name}>Swipe Up</h1>
         <section className={styles.container}>
           <div className={styles.containerInner}>
             {login ? (
@@ -109,7 +110,7 @@ function Login() {
                     value={logininfo.email}
                     onChange={(e) => setLoginInfo({...logininfo,email:e.target.value})}
                   />
-                  {errorLogin.email && <p className={styles.error}>You are a New User. Create an Account.</p>}
+                  {errorLogin.email && <p className={styles.error}>Try: sasi@gmail.com</p>}
                     <input
                       className={styles.input}
                       type='password'
@@ -118,7 +119,7 @@ function Login() {
                       value={logininfo.password}
                       onChange={(e) => setLoginInfo({...logininfo,password:e.target.value})}
                     />
-                    {errorLogin.password && <p className={styles.error}>Incorrect Password</p>}
+                    {errorLogin.password && <p className={styles.error}>Try: sasi123</p>}
                   <button className={styles.loginButton} onClick={handleLogin}>Login</button>
                 </form>
 

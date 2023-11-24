@@ -5,7 +5,7 @@ import v6 from "../images/v6.mp4";
 import v3 from "../images/v3.mp4";
 export const ReelsData = [
     {
-        channel:"Varsha",
+        channel:"Lily",
         likes:"60",
         comments:"20",
         url: v2,
@@ -19,20 +19,20 @@ export const ReelsData = [
         liked: false,
     },
     {
-        channel:"Vinishiya",
+        channel:"Sophia",
         likes:"180",
         comments:"70",
         url: v5,
         liked: false,
   },
   {
-    channel:"Kokila",
+    channel:"Emily",
     likes:"180",
     comments:"70",
     url: v6,
     liked: false,
 },{
-    channel:"Kishore",
+    channel:"Oliver",
     likes:"180",
     comments:"70",
     url: v3,

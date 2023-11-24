@@ -1,7 +1,7 @@
 import React , {useContext, useRef, useState} from 'react';
 import Styles from "./PostPage.module.css";
 import vinu from "../../assests/images/vinishiya.jpeg";
-import kokila from "../../assests/images/koki.jpg";
+import kokila from "../../assests/images/kokila.jpg";
 import varsha from "../../assests/images/varsha.jpeg";
 import kishore from "../../assests/images/kishore.jpeg";
 import myImage from "../../assests/images/p15.jpg";
@@ -40,22 +40,22 @@ function Stories() {
         <div data-aos="flip-left" className={Styles.storycard}>
             <img src={varsha} alt='stories' className={Styles.storyprofile}/>
             <img src={myImage} alt="stories"  className={Styles.storybackground}/>
-            <span className={Styles.text}>Varsha</span>
+            <span className={Styles.text}>Emily</span>
         </div>
         <div data-aos="flip-left" className={Styles.storycard}>
             <img src={kokila} alt='stories' className={Styles.storyprofile}/>
             <img src={myImage1} alt="stories"  className={Styles.storybackground}/>
-            <span className={Styles.text}>Kokila</span>
+            <span className={Styles.text}>Lily</span>
         </div>
         <div data-aos="flip-left" className={Styles.storycard}>
             <img src={vinu} alt='stories' className={Styles.storyprofile}/>
             <img src={myImage2} alt="stories"  className={Styles.storybackground}/>
-            <span className={Styles.text}>Vinishiya</span>
+            <span className={Styles.text}>Sophia</span>
         </div>
         <div data-aos="flip-left" className={Styles.storycard}>
             <img src={kishore} alt='stories' className={Styles.storyprofile}/>
             <img src={myImage3} alt="stories"  className={Styles.storybackground}/>
-            <span className={Styles.text}>Kishore</span>
+            <span className={Styles.text}>Benjamin</span>
         </div>
         
       </div>

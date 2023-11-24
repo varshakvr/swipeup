@@ -1,4 +1,4 @@
-import React, {useState , useEffect} from 'react'
+import React, {useState , useContext} from 'react'
 import Styles from "./Nav.module.css";
 import  Feed  from "@mui/icons-material/RssFeed";
 import Chat from '@mui/icons-material/Forum';
@@ -12,9 +12,8 @@ import Newspaper from '@mui/icons-material/Newspaper';
 import { ChromePicker } from 'react-color';
 import {Link} from "react-router-dom";
 import { Close } from '@mui/icons-material';
-
 function NavLeft() {
-
+  
     const[close,setClose]=useState(false)
     const[color,setColor] = useState({"background":"#fff","text-primary":"000"});
     const view=()=>{
@@ -31,9 +30,6 @@ function NavLeft() {
       )
     };
 
-    
-
-
     return (
       <>
       <div>
@@ -43,23 +39,26 @@ function NavLeft() {
                 <div className={Styles.container}>
                   <div>
                     <h3>Choose Your Background Color !!</h3>
-                    <ChromePicker  color={color.background} onChange={(e)=>{handleColorChange("background",e.hex);handleColorChange("text-secondary",e.hex)}}/>
+                    <ChromePicker  color={color.background} onChange={(e)=>{handleColorChange("background",e.hex);handleColorChange("text-secondary",e.hex)}} className={Styles.picker}/>
                   </div>
                   <div>
                     <h3>Choose Your Primary Color !!</h3>
-                    <ChromePicker color={color['text-primary']} onChange={(e)=>handleColorChange("text-primary",e.hex)} />
+                    <ChromePicker color={color['text-primary']} onChange={(e)=>handleColorChange("text-primary",e.hex)} className={Styles.picker}/>
                   </div>
                   <Close onClick={()=>setClose(false)} className={Styles.close}/>
                 </div>
             </div>} 
       </div>
+      
       <div  className={Styles.sidebar}>
       <div className={Styles.sidebarWrapper}>
         <ul className={Styles.sidebarList} data-aos='fade-right'>
+        <Link to="/">
           <li className={Styles.sidebarListItem}>
             <Feed className={Styles.sidebarIcon}/>
             <span className={Styles.sidebarListItemText}>Feed</span>
           </li>
+          </Link>
           <Link to="/chat">
           <li className={Styles.sidebarListItem}>
             <Chat className={Styles.sidebarIcon} />

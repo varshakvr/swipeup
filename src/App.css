@@ -18,3 +18,137 @@
 .font{
     font-family: 'Mooli';
 }
+
+.hiddensidebar{
+    position: fixed;
+    background-color: var(--text-secondary);
+    margin-top: 7vh;
+    height: 93vh;
+    z-index: 999;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgb(179, 179, 179);
+}
+
+.hiddensidebarWrapper {
+    padding: 20px;
+
+}
+
+.hiddensidebarList {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.hiddensidebarListItem {
+    display: flex;
+    align-items: center;
+    padding: 10px ;
+    cursor: pointer;
+    transition: 0.5s ease;
+    border-radius: 10px;
+}
+
+.hiddensidebarListItem:hover{
+    background-color: var(--text-primary);
+    color: var(--text-secondary);
+    box-shadow: 1px 1px 15px var(--text-primary);
+    transition: 0.5s ease;
+}
+
+.hiddensidebarListItem:hover > .hiddensidebarListItemText{
+    color: var(--background);
+    transition: 0.5s ease;
+}
+
+.hiddensidebarListItemText{
+    color: var(--text-primary);
+    font-weight: bold;
+}
+.hiddensidebarIcon {
+    margin-right: 15px;
+}
+
+.hiddensidebarButton {
+    width: 150px;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    color: var(--text-primary);
+    background-color: var(--background);
+}
+
+.hiddensidebarHr {
+    margin: 20px 0;
+}
+
+.hiddensidebarFriendList {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+/*pop up */
+.hiddenproduct_details{
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    background: rgba(0,0,0,0.25);
+}
+.hiddenproduct_details .hiddencontainer{
+    height: 40vh;
+    background: var(--text-secondary);
+    color: var(--text-primary);
+    padding: 5%;
+    border-radius: 10px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+.hiddencontainer > div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.hiddenproduct_details .hiddencontainer .hiddenclose{
+    width: 7%;
+    height: 7%;
+    position: absolute;
+    top: 25px;
+    right: 20px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 450px){
+    body{
+        box-sizing: border-box;
+    }  
+    ::-webkit-scrollbar {
+        display: none;
+    }
+    .hiddenproduct_details .hiddencontainer{
+        flex-direction: column;
+        height: 70vh;
+    }
+}

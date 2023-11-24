@@ -22,9 +22,7 @@
 }
 .cardGrid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); 
-    justify-content: space-between; 
-    align-content: start; 
+    grid-template-columns: repeat(4, 1fr);  
     width: 100%;
     row-gap: 50px;
     margin: 2%;
@@ -180,9 +178,9 @@ color: var(--text-primary);
     display: flex;
     flex-wrap: wrap;
     gap: 25px;
-  justify-content: center;
-  align-items: center;
-  margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
 }
 
 .online {
@@ -258,4 +256,64 @@ color: var(--text-primary);
     background-color: var(--text-secondary);
     color: var(--text-primary);
     transition: 0.5s ease-out;
+}
+
+
+
+@media screen and (max-width: 992px) {
+    .online{
+        width: 26%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .online{
+        width: 35%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .online{
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .friendlist > h2{
+        margin: 20px;
+    }
+
+    .friends{
+        gap: 10px;
+    }
+
+    .buttongrp > button{
+        padding: 2% 4%;
+    }
+
+    .online{
+        width: 40%;
+    }
+
+    .cardGrid {
+        grid-template-columns: repeat(2, 50%);
+        row-gap: 20px;
+        margin: 1%;
+    }
+
+    .cardflip{
+        height: 200px;
+    }
+
+    .back > img{
+        width: 50px;
+    }
+
+    .back{
+        justify-content:flex-start;
+    }
+
+    .row{
+        display: none;
+    }
 }

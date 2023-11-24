@@ -63,7 +63,6 @@ function PostCard() {
   return (
     <div className={Styles.post}>
       {postData.map((item,i) => (
-        
         <div className={Styles.feeds} key={item.id}>
           <div className={Styles.feed}>
             <div className={Styles.head}>

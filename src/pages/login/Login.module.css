@@ -6,6 +6,12 @@
     align-items: center;
   }
   
+  .name{
+    color: var(--text-primary);
+    position: absolute;
+    margin-left: 1rem;
+  }
+
   .containerInner {
     display: flex;
     border-radius: 20px;
@@ -127,9 +133,12 @@
   /* Responsive styles */
   @media (min-width: 768px) {
     .imageContainer {
-      display: block;
       display: flex;
-
     }
   }
   
+  @media screen and (max-width: 450px){
+    .name{
+      font-size: x-large;
+    }
+  }

@@ -9,24 +9,23 @@ import vinu from "../../assests/images/vinishiya.jpeg";
 import varsha from "../../assests/images/varsha.jpeg";
 import kishore from "../../assests/images/kishore.jpeg";
 import sai from "../../assests/images/sai.jpeg";
-import hemanth from "../../assests/images/hemanth.jpg";
 import kokila from "../../assests/images/kokila.jpg";
+import MenuIcon from '@mui/icons-material/Menu';
 function NavTop() {
 
-    const {switchTheme,user,setUser} = useContext(datacontext);
+    const {switchTheme,user,setUser,leftnavbar,setLeftNavBar} = useContext(datacontext);
     const navigate = useNavigate();
     const [DropdownOpen, setDropdownOpen] = useState(false);
     const [searchText,setSearchText] = useState("");
     const [userData,setUserData] = useState([
-      {name:"Vinishiya",profile:vinu},
-      {name:"Kokila",profile:kokila},
-      {name:"Kishore",profile:kishore},
-      {name:"Sai Srinivas",profile:sai},
-      {name:"Hemanth",profile:hemanth},
-      {name:"Varsha",profile:varsha},
+      {name:"Emily Thompson",profile:vinu},
+      {name:"Sophia Davis",profile:kokila},
+      {name:"Oliver Williams",profile:kishore},
+      {name:"Benjamin Smith",profile:sai},
+      {name:"Lily Johnson",profile:varsha},
     ])
     const[filterdata,setFilterData] = useState(userData);
-
+    
     const toggleNotificationDropdown = () => {
       setDropdownOpen(!DropdownOpen);
     };
@@ -41,10 +40,14 @@ function NavTop() {
       console.log(filterdata);
     },[searchText])
 
+    console.log(window.location.href);
   return (
     <div className={Styles.topnav}>
     <div data-aos="fade-down" >
     <div className={Styles.topbarContainer}>
+      <div className={Styles.menudiv} onClick={()=>{setLeftNavBar(!leftnavbar);console.log(leftnavbar)}}>
+      <MenuIcon className={Styles.menuIcon} />  
+      </div>
       <div className={Styles.topbarLeft}>
         <span className={Styles.logo}>SWIPE UP</span>
       </div>
