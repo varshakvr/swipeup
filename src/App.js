@@ -162,7 +162,7 @@ function App() {
             </div>} 
       </div>
       <Routes>
-        <Route path="/login" exact element={<Login />}/>
+        <Route path="/swipeup-socialmedia/login/" exact element={<Login />}/>
         <Route path="/" exact element={<><NavTop /><Home /></>}/>
         <Route path="/friends" exact element={<><NavTop /><AddFriends /></>}/>
         <Route path="/profile" exact element={<><NavTop /><UserProfile /></>}/>
