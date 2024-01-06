@@ -110,7 +110,7 @@ function Login() {
                     value={logininfo.email}
                     onChange={(e) => setLoginInfo({...logininfo,email:e.target.value})}
                   />
-                  {errorLogin.email && <p className={styles.error}>Try: sasi@gmail.com</p>}
+                  {errorLogin.email && <p className={styles.error}>Try: varsha@gmail.com</p>}
                     <input
                       className={styles.input}
                       type='password'
@@ -119,7 +119,7 @@ function Login() {
                       value={logininfo.password}
                       onChange={(e) => setLoginInfo({...logininfo,password:e.target.value})}
                     />
-                    {errorLogin.password && <p className={styles.error}>Try: sasi123</p>}
+                    {errorLogin.password && <p className={styles.error}>Try: varshakvr</p>}
                   <button className={styles.loginButton} onClick={handleLogin}>Login</button>
                 </form>
 

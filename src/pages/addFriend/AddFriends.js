@@ -167,7 +167,7 @@ function AddFriends() {
       }
       
   return (
-    <>
+    <div className={styles.main}>
     <>
     <div className={styles.friendlist}>
       <h2>Friend Request</h2>
@@ -225,7 +225,7 @@ function AddFriends() {
   
 
     
-  </>
+  </div>
 
   )
 }

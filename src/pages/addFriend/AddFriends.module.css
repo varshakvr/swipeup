@@ -1,3 +1,6 @@
+.main{
+    background-color: var(--background);
+}
 .containerflip{
     width: 100%;
     min-height: 100vh;
@@ -222,7 +225,8 @@ color: var(--text-primary);
   .friendlist > h2{
     text-align: center;
     color: var(--text-primary);
-    margin: 40px 0px;
+    padding: 40px 0px;
+    margin: 0px;
 }
   .content{
     color: var(--text-primary);

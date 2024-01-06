@@ -12,7 +12,7 @@ export const ReelsData = [
         liked: false,
   },
   {
-        channel:"sasi",
+        channel:"Varsha",
         likes:"90",
         comments:"20",
         url: v4,

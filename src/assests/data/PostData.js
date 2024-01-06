@@ -2,7 +2,7 @@ import vinu from "../../assests/images/vinishiya.jpeg";
 import varsha from "../../assests/images/varsha.jpeg";
 import kokila from "../../assests/images/kokila.jpg";
 import sai from "../../assests/images/sai.jpeg";
-import sasi from "../../assests/images/sasiprofile.jpeg";
+import sasi from "../../assests/images/varshaprofile.jpg";
 import img1 from "../images/p1.jpg";
 import img2 from "../images/p7.jpg";
 import img4 from "../images/p16.png";
@@ -12,7 +12,7 @@ import video1 from "../images/v2.mp4";
 export const PostData = [{
     type:"image",
     profilepic:sasi,
-    name:"Sasi",
+    name:"Varsha",
     url:img2,
     likes:"300",
     caption:"WildLife",
@@ -67,7 +67,7 @@ export const PostData = [{
 },{
     type:"video",
     profilepic:sasi,
-    name:"Sasi",
+    name:"Varsha",
     url:video1,
     likes:"300",
     caption:"Nature",
@@ -122,7 +122,7 @@ export const PostData = [{
 },{
     type:"image",
     profilepic:sasi,
-    name:"Sasi",
+    name:"Varsha",
     url:img4,
     likes:"300",
     caption:"Cars",
@@ -177,7 +177,7 @@ export const PostData = [{
 },{
     type:"image",
     profilepic:sasi,
-    name:"Sasi",
+    name:"Varsha",
     url:img5,
     likes:"300",
     caption:"Art",
@@ -232,7 +232,7 @@ export const PostData = [{
 },{
     type:"image",
     profilepic:sasi,
-    name:"Sasi",
+    name:"Varsha",
     url:img1,
     likes:"300",
     caption:"Sky",
